@@ -48,7 +48,7 @@ require_once 'conn.php';
     $rows = $result->num_rows;
     for($i = 0; $i< $rows; $i++){
         $row = $result->fetch_array(MYSQLI_NUM);
-        echo "<li><img src='jpg/$row[4]'><br><a href='#'><span>$row[1]</span></a><br><span>Price $row[2]$$$</span><br><span>$row[3]</span></li>";
+        echo "<li><img src='jpg/$row[4]'><br><a href='#'><span>$row[1]</span></a><br><span>Price $row[2]$$$</span><br><span>$row[1]</span></li>";
     }
     ?>
 
